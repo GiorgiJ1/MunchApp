@@ -107,7 +107,7 @@ impl MunchMapApp {
 
     fn search(&mut self) {
         self.status = "Searching…".to_string();
-        self.results.clear();// ბაჰაჰაჰაჰაჰჰაჰაჰაჰა გუნა გუნა გუნააააა ბაჰაჰაჰა
+        self.results.clear();
 
         let budget: f64 = self.budget_eur.trim().parse().unwrap_or(0.0);
         let max_minutes: f64 = self.max_minutes.trim().parse().unwrap_or(0.0);
@@ -162,7 +162,7 @@ impl eframe::App for MunchMapApp {
         ctx.set_pixels_per_point(1.15);
 
         egui::TopBottomPanel::top("top_bar").show(ctx, |ui| {
-            ui.add_space(6.0);// ფულს დავდებ რომ არ იმუშავებს
+            ui.add_space(6.0);
             ui.horizontal(|ui| {
                 ui.label(RichText::new("🍕 MunchMap").size(22.0).strong());
                 ui.add_space(10.0);
