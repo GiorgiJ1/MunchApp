@@ -412,7 +412,7 @@ fn overpass_food_nearby(
             let s = String::from_utf8(v.to_vec())?;
             return parse_overpass_json(&s);
         }
-    }//მანჩესტერელო ფუჩურებო და ყვერებო სალამი ლივერპულიდან
+    }
 
     let query = format!(
         r#"[out:json][timeout:25];
